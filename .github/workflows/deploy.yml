@@ -25,7 +25,7 @@ jobs:
           flake8 .
       - name: Run tests
         env:
-           SECRET_KEY: testkey
+           SECRET_KEY: 'django-insecure-fw&1%kq7bd**5&w(&eo8lg$a6^i0%tmvlz+_)36w6*g_aogz*y'
            DEBUG: 'True'
         run: |
           python manage.py test
