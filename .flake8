@@ -1,9 +1,8 @@
-[[flake8]
-per-file-ignores =
-    # imported but unused
-    __init__.py: F401
-
 [flake8]
-ignore = D203
-exclude = .git,__pycache__,docs/source/conf.py,old,build,dist
-max-complexity = 10s]
+exclude =
+    .git,
+    __pycache__,
+    env/,
+    venv/,
+    .venv/,
+    migrations/,
