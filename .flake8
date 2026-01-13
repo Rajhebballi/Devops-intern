@@ -6,3 +6,4 @@ exclude =
     venv/,
     .venv/,
     migrations/,
+max-line-length = 100
