@@ -2,7 +2,7 @@ name: Django CI/CD Pipeline
 on:
   push:
     branches: [ "main" ]
-    pull_request:
+    # pull_request:
       
 jobs:
   build:
@@ -31,4 +31,4 @@ jobs:
           python manage.py test
       - name: Build Docker image
         run: |
-          docker build -t django-devops-app .
+          docker build -t django-devops .
